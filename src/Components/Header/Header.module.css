@@ -3,4 +3,6 @@
     background-color: rgb(43, 80, 185);
     border-radius: 2px;
     margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
 }
