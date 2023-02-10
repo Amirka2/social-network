@@ -1,0 +1,26 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(168, 168, 168);
+    width: 15%;
+    max-width: 200px;
+    min-width: 70px;
+    border-radius: 5px;
+}
+.hidden {
+    display: none;
+}
+@media screen and (max-width: 300px)  {
+    .wrapper {
+        width: 100%;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .mobile > img {
+        width: 60px;
+    }
+}
