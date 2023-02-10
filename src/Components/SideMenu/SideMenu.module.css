@@ -10,6 +10,9 @@
 .hidden {
     display: none;
 }
+.ul li{
+    text-align: left;
+}
 @media screen and (max-width: 300px)  {
     .wrapper {
         width: 100%;

@@ -7,10 +7,10 @@ export default function SideMenu() {
   return (
     <div className={styles.wrapper}>
         <div className={styles.desktop}>
-            <ul>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
+            <ul className={styles.ul}>
+                <li>Моя страница</li>
+                <li>Сообщения</li>
+                <li>Фото</li>
             </ul>
         </div>
         <div className={styles.mobile}>
