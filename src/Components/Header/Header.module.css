@@ -1,4 +1,6 @@
 .headerWrapper {
     width: 100%;
     background-color: rgb(43, 80, 185);
+    border-radius: 2px;
+    margin-bottom: 5px;
 }

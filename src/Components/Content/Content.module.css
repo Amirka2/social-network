@@ -1,13 +1,13 @@
 .wrapper {
     width: 80%;
-    min-width: 400px;
+    min-width: 250px;
     background-color: rgb(208, 207, 207);
-
+    border-radius: 5px;
 }
 img.dickSucker {
-    width: 100px;
+    width: 200px;
     animation-name: Appearance;
-    animation-duration: 3s;
+    animation-duration: 0.5s;
     animation-timing-function: cubic-bezier(.1,-.6,.2,0);
 }
 @-webkit-keyframes Appearance {

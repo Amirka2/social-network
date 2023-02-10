@@ -1,7 +1,0 @@
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(168, 168, 168);
-    width: 20%;
-    max-width: 200px;
-}
