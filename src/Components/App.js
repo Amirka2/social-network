@@ -25,15 +25,7 @@ function App() {
           <Header></Header>
           <div style={{display: "flex", "justify-content": "space-between"}}>
               <SideMenu></SideMenu>
-
-                  <div className={styles1.wrapper}>
-                      <Routes>
-                          <Route path='/' element={<Home/>}/>
-                          <Route path='/profile' element={<Profile/>}/>
-                          <Route path='/messages' element={<Messages/>}/>
-                      </Routes>
-                      {/*<img className={styles1.dickSucker} src={dickSucker} alt="dickSucker"></img>*/}
-                  </div>
+              <Content></Content>
           </div>
           <Footer></Footer>
         </div>
