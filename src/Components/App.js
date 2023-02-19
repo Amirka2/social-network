@@ -4,9 +4,18 @@ import Header from './Header/Header'
 import SideMenu from './SideMenu/SideMenu'
 import Content from './Content/Content'
 import Footer from './Footer/Footer'
+import {BrowserRouter} from "react-router-dom";
 
+function Home() {
+    return (
+        <div>
+            <h2>Home</h2>
+        </div>
+    )
+}
 function App() {
   return (
+      <BrowserRouter>
       <div className="App">
         <div className={styles.wrapper}>
           <Header></Header>
@@ -17,6 +26,7 @@ function App() {
           <Footer></Footer>
         </div>
       </div>
+      </BrowserRouter>
   );
 }
 
