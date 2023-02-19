@@ -1,9 +1,7 @@
 import React from 'react'
 import styles from './SideMenu.module.css'
 import menuIcon from './imgs/menuIcon.png'
-import Profile from '../Profile/Profile'
-import Messages from '../Messages/Messages'
-import {Link, BrowserRouter} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 export default function SideMenu() {
   return (

@@ -10,13 +10,13 @@ function Home(){ return <h2>Главная</h2>; }
 
 export default function Content() {
   return (
-      <div className={styles1.wrapper}>
+      <div className={styles.wrapper}>
           <Routes>
               <Route path='/' element={<Home/>}/>
               <Route path='/profile' element={<Profile/>}/>
               <Route path='/messages' element={<Messages/>}/>
           </Routes>
-          <img className={styles1.dickSucker} src={dickSucker} alt="dickSucker"></img>
+          <img className={styles.dickSucker} src={dickSucker} alt="dickSucker"></img>
       </div>
   )
 }
