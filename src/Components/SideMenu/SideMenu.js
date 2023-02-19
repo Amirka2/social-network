@@ -7,12 +7,11 @@ import {Link, BrowserRouter} from 'react-router-dom'
 
 export default function SideMenu() {
   return (
-      <BrowserRouter>
             <div className={styles.wrapper}>
                 <div className={styles.desktop}>
-                    <div><Link to={'/'}>main</Link></div>
-                    <div><Link to={'/profile'}>profile</Link></div>
-                    <div><Link to={'/messages'}>messages</Link></div>
+                    <div><Link to='/'>main</Link></div>
+                    <div><Link to='/profile'>profile</Link></div>
+                    <div><Link to='/messages'>messages</Link></div>
                 </div>
                 <div className={styles.mobile}>
                     <img src={menuIcon}></img>
@@ -25,6 +24,5 @@ export default function SideMenu() {
             </ul> */}
                 </div>
             </div>
-      </BrowserRouter>
   )
 }
