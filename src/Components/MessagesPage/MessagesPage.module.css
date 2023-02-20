@@ -4,21 +4,15 @@
     display: flex;
     flex-direction: row;
 }
+
 .dialogs {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
-.dialog {
-    display: block;
-    width: 200px;
-    text-align: left;
-    background-color: #dedede;
-    margin: 2px;
-}
-.dialog:hover {
-    background-color: #fff;
-    box-shadow: gray;
+
+.dialogs {
+
 }
 .messages {
     display: block;
@@ -29,9 +23,6 @@
     align-items: flex-start;
     background-color: #fff;
 }
-.message {
-    background-color: #e0e0e0;
-    text-align: left;
-    padding: 4px;
-    margin: 2px;
-}
+
+
+

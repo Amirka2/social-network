@@ -1,0 +1,12 @@
+.dialogItem {
+    display: block;
+    width: 200px;
+    text-align: left;
+    background-color: #dedede;
+    margin: 2px;
+}
+
+.dialogItem:hover {
+    background-color: #fff;
+    box-shadow: gray;
+}
