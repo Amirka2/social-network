@@ -1,8 +1,7 @@
 import React from 'react'
 import styles from './Content.module.css'
-import dickSucker from './imgs/dickSucker.png'
 import {Route, Routes} from "react-router-dom";
-import Messages from '../Messages/Messages';
+import MessagesPage from '../MessagesPage/MessagesPage';
 import Profile from '../Profile/Profile'
 
 function Home(){ return <h2>Главная</h2>; }
@@ -13,9 +12,8 @@ export default function Content() {
           <Routes>
               <Route path='/' element={<Home/>}/>
               <Route path='/profile' element={<Profile/>}/>
-              <Route path='/messages' element={<Messages/>}/>
+              <Route path='/messages' element={<MessagesPage/>}/>
           </Routes>
-          <img className={styles.dickSucker} src={dickSucker} alt="dickSucker"></img>
       </div>
   )
 }

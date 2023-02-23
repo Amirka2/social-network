@@ -1,0 +1,28 @@
+.wrapper {
+    padding: 5px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.dialogs {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.dialogs {
+
+}
+.messages {
+    display: block;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    background-color: #fff;
+}
+
+
+
