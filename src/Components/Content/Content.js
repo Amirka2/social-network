@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './Content.module.css'
-import dickSucker from './imgs/dickSucker.png'
 import {Route, Routes} from "react-router-dom";
 import Messages from '../Messages/Messages';
 import Profile from '../Profile/Profile'
@@ -15,7 +14,6 @@ export default function Content() {
               <Route path='/profile' element={<Profile/>}/>
               <Route path='/messages' element={<Messages/>}/>
           </Routes>
-          <img className={styles.dickSucker} src={dickSucker} alt="dickSucker"></img>
       </div>
   )
 }
