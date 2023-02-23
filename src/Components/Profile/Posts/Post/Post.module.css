@@ -1,0 +1,18 @@
+.wrapper {
+    background-color: #9b9b9b;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 220, 0.61);
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 0 10px;
+}
+.like {
+    display: flex;
+    width: 40px;
+    color: #ffc400;
+    cursor: pointer;
+    text-align: right;
+}
