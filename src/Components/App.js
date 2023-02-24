@@ -6,13 +6,14 @@ import Content from './Content/Content'
 import Footer from './Footer/Footer'
 import {BrowserRouter} from "react-router-dom";
 
-function Home() {
-    return (
-        <div>
-            <h2>Home</h2>
-        </div>
-    )
-}
+// document.getElementsByClassName('dialog').onclick = function (e) {
+//     for (let dialog of document.getElementsByClassName('dialog')) {
+//         if (dialog.classList.contains('active'))
+//             dialog.classList.remove('active');
+//         if (dialog.id === e.id)
+//             dialog.classList.add('active');
+//     }
+// }
 function App() {
   return (
       <BrowserRouter>
