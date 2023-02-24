@@ -9,19 +9,24 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    border: 1px solid black;
+    border-radius: 5px 0 0 5px;
+    border-right: none;
 }
 
 .dialogs {
 
 }
 .messages {
-    display: block;
     width: 80%;
     height: 100%;
     display: flex;
+    padding: 3px;
     flex-direction: column-reverse;
     align-items: flex-start;
     background-color: #fff;
+    border: 1px solid black;
+    border-radius: 0 5px 5px 0;
 }
 
 
