@@ -1,9 +1,19 @@
 .wrapper {
     display: flex;
     flex-direction: row;
+    min-height: 100px;
+    height: 150px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 100px;
 }
 .info {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
+    width: 70%;
+}
+.pic {
+    align-self: flex-end;
+    margin-top: 100px;
 }
