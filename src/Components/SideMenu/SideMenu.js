@@ -7,9 +7,9 @@ export default function SideMenu() {
   return (
             <div className={styles.wrapper}>
                 <div className={styles.desktop}>
-                    <div><NavLink className={styles.link} to='/' className={({isActive}) =>`${isActive ? styles.active : ''}`}>main</NavLink></div>
-                    <div><NavLink className={styles.link} to='/profile' className={({isActive}) =>`${isActive ? styles.active : ''}`}>profile</NavLink></div>
-                    <div><NavLink className={styles.link} to='/messages' className={({isActive}) =>`${isActive ? styles.active : ''}`}>messages</NavLink></div>
+                    <div><NavLink to='/' className={({isActive}) =>`${isActive ? styles.active : ''}`}>main</NavLink></div>
+                    <div><NavLink to='/profile' className={({isActive}) =>`${isActive ? styles.active : ''}`}>profile</NavLink></div>
+                    <div><NavLink to='/messages' className={({isActive}) =>`${isActive ? styles.active : ''}`}>messages</NavLink></div>
                 </div>
                 {/*<div className={styles.mobile}>
                     <img src={menuIcon}></img>

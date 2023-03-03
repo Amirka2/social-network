@@ -2,6 +2,9 @@ import React from 'react';
 import styles from './MessagesPage.module.css'
 import Message from "./Message/Message";
 import DialogItem from "./DialogItem/DialogItem";
+import {Route, useLocation} from "react-router-dom";
+import message from "./Message/Message";
+
 
 let dialogsData = [
     { id: 0, name: "Dima"},
@@ -11,7 +14,7 @@ let messagesData = [
     { id: 0, name: "Dima", messages: ["Hi", "it's me"] },
     { id: 1, name: "Eugene", messages: ["Hi", "what's up?"] },
 ]
-let dialogs = dialogsData.map(d => <DialogItem className={styles.dialog} name={d.name} id={d.id}/>)
+let dialogs = dialogsData.map(d => <DialogItem className={styles.dialog} name={d.name} dialogId={d.id}/>)
 let active;
 const chooseActiveDialog = () => {
     let dialogs = document.getElementsByClassName('.dialog');
@@ -20,14 +23,11 @@ const chooseActiveDialog = () => {
             active = dialog;
     }
 }
-const messages = () => {
-    let activeDialog = active;
-    let dialog = messagesData.find(dialog => {
-        if (dialog.id === activeDialog.id)
-            return dialog;
-    });
-    dialog.messages.map(m => <Message text={m}/>);
-}
+const Messages = messagesData.map(m => {
+    if (m.id === 1) {
+        m.messages.map(text => <Message text={text}/>);
+    }
+})
 
 const MessagesPage = () => {
     chooseActiveDialog();
@@ -37,7 +37,7 @@ const MessagesPage = () => {
                 { dialogs }
             </div>
             <div className={styles.messages}>
-                { messages }
+                <Route element={<Messages/>}/>
             </div>
         </div>
     );
