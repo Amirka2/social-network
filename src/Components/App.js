@@ -14,7 +14,8 @@ import {BrowserRouter} from "react-router-dom";
 //             dialog.classList.add('active');
 //     }
 // }
-function App() {
+
+function App(props) {
   return (
       <BrowserRouter>
       <div className="App">
@@ -22,7 +23,7 @@ function App() {
           <Header></Header>
           <div style={{display: "flex", "justify-content": "space-between"}}>
               <SideMenu></SideMenu>
-              <Content></Content>
+              <Content postData={props.postData} messagesData={props.messagesData}></Content>
           </div>
           <Footer></Footer>
         </div>
